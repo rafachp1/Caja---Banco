@@ -67,7 +67,7 @@
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -84,17 +84,68 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cuentas_Crear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas_Crear.Designer.cs">
+      <DependentUpon>Cuentas_Crear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuentas_Estado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas_Estado.Designer.cs">
+      <DependentUpon>Cuentas_Estado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Tran_Deposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tran_Deposito.Designer.cs">
+      <DependentUpon>Tran_Deposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tran_Retiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tran_Retiro.Designer.cs">
+      <DependentUpon>Tran_Retiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tran_Servicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tran_Servicio.Designer.cs">
+      <DependentUpon>Tran_Servicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tran_Transferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tran_Transferencia.Designer.cs">
+      <DependentUpon>Tran_Transferencia.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cuentas_Crear.resx">
+      <DependentUpon>Cuentas_Crear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuentas_Estado.resx">
+      <DependentUpon>Cuentas_Estado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,6 +156,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tran_Deposito.resx">
+      <DependentUpon>Tran_Deposito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tran_Retiro.resx">
+      <DependentUpon>Tran_Retiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tran_Servicio.resx">
+      <DependentUpon>Tran_Servicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tran_Transferencia.resx">
+      <DependentUpon>Tran_Transferencia.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -120,13 +183,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Royal_db.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Royal_db_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Royal_db.mdf</DependentUpon>
-    </Content>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

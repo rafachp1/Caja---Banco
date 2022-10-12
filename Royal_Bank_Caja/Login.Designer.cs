@@ -32,7 +32,7 @@ namespace Royal_Bank_Caja
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.usertxt = new System.Windows.Forms.TextBox();
             this.passtxt = new System.Windows.Forms.TextBox();
@@ -56,14 +56,15 @@ namespace Royal_Bank_Caja
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Location = new System.Drawing.Point(106, 203);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLogin.Location = new System.Drawing.Point(96, 195);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(97, 23);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Iniciar sesion";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label3
             // 
@@ -71,9 +72,9 @@ namespace Royal_Bank_Caja
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(22, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 24);
+            this.label3.Size = new System.Drawing.Size(114, 24);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Admin Login";
+            this.label3.Text = "Royal Bank";
             // 
             // usertxt
             // 
@@ -98,7 +99,7 @@ namespace Royal_Bank_Caja
             this.Controls.Add(this.passtxt);
             this.Controls.Add(this.usertxt);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -114,7 +115,7 @@ namespace Royal_Bank_Caja
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox usertxt;
         private System.Windows.Forms.TextBox passtxt;

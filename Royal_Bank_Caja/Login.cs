@@ -22,17 +22,23 @@ namespace Royal_Bank_Caja
         {
             
 
-            SqlConnection connection = new SqlConnection();
+            //SqlConnection connection = new SqlConnection();
 
-            connection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\RafaelCheco\source\repos\Royal_Bank_Caja\Royal_Bank_Caja\Royal_db.mdf;Integrated Security=True";
-            connection.Open();
+            //connection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\RafaelCheco\source\repos\Royal_Bank_Caja\Royal_Bank_Caja\Royal_db.mdf;Integrated Security=True";
+            //connection.Open();
    
 
 
    
 
         }
-        
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            //Conectar a integracion y fuentes de datos necesarias
+            //Cargar el form principal
+            Main main = new Main();
+            main.Show();     
+        }
     }
 }
