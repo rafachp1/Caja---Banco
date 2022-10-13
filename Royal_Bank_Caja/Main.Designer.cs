@@ -31,6 +31,7 @@ namespace Royal_Bank_Caja
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnMain = new System.Windows.Forms.ToolStripButton();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.btnCreateAcc = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCheckStatus = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,7 +44,7 @@ namespace Royal_Bank_Caja
             this.iniciarJornadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.terminarJornadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLogout = new System.Windows.Forms.ToolStripButton();
-            this.btnMain = new System.Windows.Forms.ToolStripButton();
+            this.pagoDePrestamosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +61,16 @@ namespace Royal_Bank_Caja
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnMain
+            // 
+            this.btnMain.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
+            this.btnMain.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(40, 22);
+            this.btnMain.Text = "Inicio";
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
             // 
             // toolStripDropDownButton1
             // 
@@ -94,7 +105,8 @@ namespace Royal_Bank_Caja
             this.btnDeposit,
             this.btnWithdraw,
             this.btnTransfer,
-            this.btnServices});
+            this.btnServices,
+            this.pagoDePrestamosToolStripMenuItem});
             this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
@@ -144,13 +156,13 @@ namespace Royal_Bank_Caja
             // iniciarJornadaToolStripMenuItem
             // 
             this.iniciarJornadaToolStripMenuItem.Name = "iniciarJornadaToolStripMenuItem";
-            this.iniciarJornadaToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.iniciarJornadaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iniciarJornadaToolStripMenuItem.Text = "Iniciar jornada";
             // 
             // terminarJornadaToolStripMenuItem
             // 
             this.terminarJornadaToolStripMenuItem.Name = "terminarJornadaToolStripMenuItem";
-            this.terminarJornadaToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.terminarJornadaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.terminarJornadaToolStripMenuItem.Text = "Terminar jornada";
             // 
             // btnLogout
@@ -163,15 +175,11 @@ namespace Royal_Bank_Caja
             this.btnLogout.Text = "Cerrar sesión";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnMain
+            // pagoDePrestamosToolStripMenuItem
             // 
-            this.btnMain.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
-            this.btnMain.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(40, 22);
-            this.btnMain.Text = "Inicio";
-            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
+            this.pagoDePrestamosToolStripMenuItem.Name = "pagoDePrestamosToolStripMenuItem";
+            this.pagoDePrestamosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pagoDePrestamosToolStripMenuItem.Text = "Pago de prestamos";
             // 
             // Main
             // 
@@ -207,5 +215,6 @@ namespace Royal_Bank_Caja
         private System.Windows.Forms.ToolStripButton btnLogout;
         private System.Windows.Forms.ToolStripMenuItem btnServices;
         private System.Windows.Forms.ToolStripButton btnMain;
+        private System.Windows.Forms.ToolStripMenuItem pagoDePrestamosToolStripMenuItem;
     }
 }
